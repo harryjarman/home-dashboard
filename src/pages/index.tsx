@@ -53,6 +53,11 @@ const Homepage = () => {
           className={styles.portainer}
         />
         <AppCard
+          name="Tautulli"
+          url="http://192.168.1.2:8181/"
+          className={styles.tautilli}
+        />
+        <AppCard
           name="Hyperion"
           url="http://192.168.1.61:8090/"
           className={styles.hyperion}
