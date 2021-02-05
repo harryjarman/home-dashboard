@@ -1,0 +1,150 @@
+@function line-color($line) {
+  @if $line == "central" {
+    @return red;
+  }
+
+  @if $line == "circle" {
+    @return rgb(255, 217, 0);
+  }
+
+  @if $line == "district" {
+    @return green;
+  }
+
+  @if $line == "dlr" {
+    @return teal;
+  }
+
+  @if $line == "hammersmith_city" {
+    @return rgb(255, 106, 205);
+  }
+
+  @if $line == "jubilee" {
+    @return grey;
+  }
+
+  @if $line == "london_overground" {
+    @return orange;
+  }
+
+  @if $line == "metropolitan" {
+    @return purple;
+  }
+
+  @if $line == "northern" {
+    @return black;
+  }
+
+  @if $line == "piccadilly" {
+    @return rgb(0, 81, 255);
+  }
+
+  @if $line == "victoria" {
+    @return rgb(0, 225, 255);
+  }
+
+  @if $line == "waterloo_city" {
+    @return #87cdbb;
+  }
+}
+
+@mixin line-style($line) {
+  background-color: line-color($line);
+  color: white;
+  @if $line == "circle" {
+    color: black;
+  }
+
+  @if $line == "victoria" {
+    color: black;
+  }
+}
+
+.wrapper {
+  overflow-x: auto;
+  width: 100%;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      flex: 1;
+      padding: 8px 32px;
+
+      &:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .line-name {
+        font-size: 0.8em;
+      }
+
+      &.central {
+        @include line-style(central);
+      }
+
+      &.circle {
+        @include line-style(circle);
+      }
+
+      &.district {
+        @include line-style(district);
+      }
+
+      &.dlr {
+        @include line-style(dlr);
+      }
+
+      &.hammersmith_city {
+        @include line-style(hammersmith_city);
+      }
+
+      &.jubilee {
+        @include line-style(jubilee);
+      }
+
+      &.london_overground {
+        @include line-style(london_overground);
+      }
+
+      &.metropolitan {
+        @include line-style(metropolitan);
+      }
+
+      &.northern {
+        @include line-style(northern);
+      }
+
+      &.piccadilly {
+        @include line-style(piccadilly);
+      }
+
+      &.victoria {
+        @include line-style(victoria);
+      }
+
+      &.waterloo_city {
+        @include line-style(waterloo_city);
+      }
+
+      .status {
+        font-size: 0.7em;
+        white-space: nowrap;
+      }
+    }
+  }
+}

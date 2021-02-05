@@ -1,6 +1,7 @@
 import React from "react";
 import AppCard from "../components/AppCard";
 import Clock from "../components/Clock";
+import TFLStatus from "../components/TFLStatus";
 import Weather from "../components/Weather";
 import styles from "../styles/Homepage.module.scss";
 
@@ -12,7 +13,10 @@ const Homepage = () => {
           <Clock />
         </h1>
         <Weather />
+        <br />
+        <TFLStatus />
       </div>
+      <br />
       <div className={styles.apps}>
         <AppCard
           name="Plex"
