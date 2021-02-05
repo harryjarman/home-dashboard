@@ -1,0 +1,29 @@
+.wrapper {
+  width: calc(33% - 32px);
+  min-width: 200px;
+  height: calc(100vw / 3 * 0.5625);
+  min-height: 112.5px;
+  box-shadow: 0 0 10px 0 #a7a7a7;
+  margin: 16px;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 150px;
+    width: 50%;
+  }
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}

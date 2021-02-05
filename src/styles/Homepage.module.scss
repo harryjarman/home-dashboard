@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+}
+
+.apps {
+  width: 100%;
+  margin-top: 32px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+
+  .homeassistant {
+    background: #41bcf5;
+  }
+
+  .unifi {
+    background: #003d92;
+  }
+
+  .utorrent {
+    background: #55ab44;
+    color: white;
+  }
+
+  .portainer {
+    background: #13bdf9;
+  }
+
+  .sonarr {
+    background: #2b2c2b;
+  }
+
+  .plex {
+    background: #464746;
+  }
+
+  .hyperion {
+    background: #cccdcc;
+  }
+}
