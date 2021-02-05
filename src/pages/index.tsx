@@ -15,17 +15,18 @@ const Homepage = () => {
       </div>
       <div className={styles.apps}>
         <AppCard
+          name="Plex"
+          url="https://app.plex.tv/"
+          className={styles.plex}
+        />
+        <AppCard
           name="Home Assistant"
           url="http://192.168.1.100:8123"
           className={styles.homeassistant}
         >
           <img src="/images/homeassistant.png" />
         </AppCard>
-        <AppCard
-          name="Portainer"
-          url="http://192.168.1.2:9000/"
-          className={styles.portainer}
-        />
+
         <AppCard
           name="Unifi"
           url="http://192.168.1.1"
@@ -47,14 +48,19 @@ const Homepage = () => {
           className={styles.sonarr}
         />
         <AppCard
-          name="Plex"
-          url="https://app.plex.tv/"
-          className={styles.plex}
+          name="Portainer"
+          url="http://192.168.1.2:9000/"
+          className={styles.portainer}
         />
         <AppCard
           name="Hyperion"
           url="http://192.168.1.61:8090/"
           className={styles.hyperion}
+        />
+        <AppCard
+          name="Goodlord"
+          url="https://foliolondon.goodlord.co/#/login"
+          className={styles.goodlord}
         />
       </div>
     </div>

@@ -16,7 +16,7 @@ const AppCard: React.FC<IAppCardProps> = ({
   return (
     <div
       className={[styles.wrapper, className].join(" ")}
-      onClick={() => (window.location.href = url)}
+      onClick={() => window.open(url)}
     >
       <img src={`/app-icons/${name.replace(/\s/, "").toLowerCase()}.png`} />
     </div>

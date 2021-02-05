@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Home Dashboard</title>
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap"
             rel="stylesheet"
