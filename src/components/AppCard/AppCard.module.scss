@@ -17,6 +17,12 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  transition: transform 0.2s ease-in-out;
+
   img {
     max-width: 150px;
     width: 50%;
