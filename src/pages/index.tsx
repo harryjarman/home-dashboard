@@ -28,47 +28,23 @@ const Homepage = () => {
         />
         <AppCard
           name="Home Assistant"
-          url="http://192.168.1.100:8123"
+          url="/hass"
           className={styles.homeassistant}
         >
           <img src="/images/homeassistant.png" />
         </AppCard>
 
-        <AppCard
-          name="Unifi"
-          url="http://192.168.1.1"
-          className={styles.unifi}
-        />
-        <AppCard
-          name="uTorrent"
-          url="http://192.168.1.2:9091/gui"
-          className={styles.utorrent}
-        />
-        <AppCard
-          name="Sonarr"
-          url="http://192.168.1.2:8989/"
-          className={styles.sonarr}
-        />
-        <AppCard
-          name="Radarr"
-          url="http://192.168.1.2:8988/"
-          className={styles.sonarr}
-        />
+        <AppCard name="Unifi" url="/unifi" className={styles.unifi} />
+        <AppCard name="uTorrent" url="/utorrent" className={styles.utorrent} />
+        <AppCard name="Sonarr" url="/sonarr" className={styles.sonarr} />
+        <AppCard name="Radarr" url="/radarr" className={styles.sonarr} />
         <AppCard
           name="Portainer"
-          url="http://192.168.1.2:9000/"
+          url="/portainer"
           className={styles.portainer}
         />
-        <AppCard
-          name="Tautulli"
-          url="http://192.168.1.2:8181/"
-          className={styles.tautilli}
-        />
-        <AppCard
-          name="Hyperion"
-          url="http://192.168.1.61:8090/"
-          className={styles.hyperion}
-        />
+        <AppCard name="Tautulli" url="/tautulli" className={styles.tautilli} />
+        <AppCard name="Hyperion" url="/hyperion" className={styles.hyperion} />
         <AppCard
           name="Goodlord"
           url="https://foliolondon.goodlord.co/#/login"
