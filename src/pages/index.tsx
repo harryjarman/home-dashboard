@@ -1,6 +1,7 @@
 import React from "react";
 import AppCard from "../components/AppCard";
 import Clock from "../components/Clock";
+import JourneyTime from "../components/JourneyTime";
 import TFLStatus from "../components/TFLStatus";
 import Weather from "../components/Weather";
 import styles from "../styles/Homepage.module.scss";
@@ -13,6 +14,8 @@ const Homepage = () => {
           <Clock />
         </h1>
         <Weather />
+        <br />
+        <JourneyTime />
         <br />
         <TFLStatus />
       </div>

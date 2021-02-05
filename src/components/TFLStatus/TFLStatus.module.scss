@@ -46,6 +46,10 @@
   @if $line == "waterloo_city" {
     @return #87cdbb;
   }
+
+  @if $line == "bakerloo" {
+    @return rgb(131, 13, 13);
+  }
 }
 
 @mixin line-style($line) {
@@ -139,6 +143,10 @@
 
       &.waterloo_city {
         @include line-style(waterloo_city);
+      }
+
+      &.bakerloo {
+        @include line-style(bakerloo);
       }
 
       .status {

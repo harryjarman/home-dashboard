@@ -20,6 +20,7 @@ export default async (req, res) => {
         "sensor.metropolitan",
         "sensor.northern",
         "sensor.piccadilly",
+        "sensor.bakerloo",
         // "sensor.tfl_rail",
         "sensor.dlr",
         "sensor.london_overground",
